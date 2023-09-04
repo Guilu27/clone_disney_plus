@@ -216,10 +216,16 @@
     </section>
 
     <section class="img-text-section img-text-section--image-full-width">
-      <img
-        src="dist/images/fundo_rei_leao.png"
-        alt="imagem com tv, computador, tablet e celular"
-      />
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="dist/images/fundo_rei_leao_celular.png"
+        />
+        <img
+          src="dist/images/fundo_rei_leao.png"
+          alt="imagem com tv, computador, tablet e celular"
+        />
+      </picture>
       <div
         class="img-text-section__text-container img-text-section--image-full-width__text-container"
       >
@@ -362,6 +368,6 @@
       </div>
     </footer>
 
-    <script src="src/main.js"></script>
+    <script src="dist/js/main.js"></script>
   </body>
 </html>
